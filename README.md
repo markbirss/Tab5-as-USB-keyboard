@@ -40,7 +40,7 @@ Connect your **M5Stack Tab5 Keyboard** directly to the **ESP32-S3-DevKitM-1** vi
 
 ---
 
-## 🔌 Understanding Your Board's Dual USB-C Ports
+## 🔌 Understanding Your Board's Dual micro USB Ports
 
 The ESP32-S3 DevKit houses two separate USB interfaces:
 1. **USB-to-UART Port**: Wired to an onboard CP210x chip. Connect this to your PC to upload your firmware binary and track live telemetry logs in the PlatformIO Serial Monitor.
