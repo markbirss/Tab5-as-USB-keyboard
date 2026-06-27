@@ -127,6 +127,10 @@ If you disconnect a data jumper wire (such as SCL or SDA) while the device is ru
 - Your terminal will output `[WATCHDOG ALERT] Bus failure detected.`
 - Simply slide the physical wire back into place. The automated recovery block resets the line registers, changes the keyboard light back to **solid Blue**, and lets you resume typing instantly without a manual board restart.
 
+## 🤝 Contributing
+
+Contributions to improve performance, add multi-key rollover maps, or add native hardware async callbacks are welcome! Feel free to open an issue or submit a pull request.
+
 ## 📄 License
 This project is open-source and licensed under the MIT License.
 
