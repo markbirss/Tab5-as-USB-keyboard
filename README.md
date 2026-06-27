@@ -2,7 +2,8 @@
 
 An ultra-low latency, self-healing hardware bridge that transforms the **M5Stack Tab5 Keyboard** into a native USB Human Interface Device (HID) using an **ESP32-S3-DevKitM-1**. 
 
-<img width="3445" height="1832" alt="20260627_160042" src="https://github.com/user-attachments/assets/2c963dc9-32da-49d9-ad64-722fe058bcd9" />
+<img width="3213" height="1832" alt="20260627_160042" src="https://github.com/user-attachments/assets/13cd1b84-2139-4877-8e5e-62c2dc9acf33" />
+
 
 | ESP32-S3 DevKit Pinout Reference | M5Stack Tab5 Mechanical Unit |
 | :---: | :---: |
