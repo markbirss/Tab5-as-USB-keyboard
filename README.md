@@ -2,6 +2,13 @@
 
 An ultra-low latency, self-healing hardware bridge that transforms the **M5Stack Tab5 Keyboard** into a native USB Human Interface Device (HID) using an **ESP32-S3-DevKitM-1**. 
 
+| ESP32-S3 DevKit Pinout Reference | M5Stack Tab5 Mechanical Unit |
+| :---: | :---: |
+| [![ESP32-S3 DevKit Layout](https://github.com/user-attachments/assets/41c6e95d-75cd-426c-9e0f-f802caf7abae)](https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitm-1/user_guide.html#hardware-reference) | [![M5Stack Tab5 Layout](https://github.com/user-attachments/assets/afd5b47d-35e6-4fc1-bbc6-6e8a60b8b79c)](https://docs.m5stack.com/en/tab5/Tab5_Keyboard) |
+| [Espressif Hardware Specs](https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitm-1/user_guide.html#hardware-reference) | [M5Stack Product Documentation](https://docs.m5stack.com/en/tab5/Tab5_Keyboard) |
+
+---
+
 This firmware utilizes the native USB-OTG peripheral layer of the ESP32-S3 to act as a hardware keyboard injector, running an optimized row-major matrix decoder with full **Shift (Aa)**, **Symbol (Sym)**, **Control (Ctrl)**, and **Alt** modifier support.
 
 ## ✨ Features
@@ -75,14 +82,21 @@ src_filter = +<main.cpp>
    - Press and **hold the BOOT button**.
    - Tap the **RST button** once.
    - **Release the BOOT button**.
-3. Inside VS Code, press `Ctrl+Alt+B` to compile the binary, then press `Ctrl+Alt+U` to upload.
-4. Once completed, tap the **RST button** on the board once to exit bootloader mode and boot the application.
+
+#### ⚡ Command Line Flash & Monitor
+To quickly compile, upload via your designated Linux/macOS serial device handler port (`/dev/ttyUSB0`), and instantly switch into terminal monitoring tracking loops via `tio`, execute:
+
+```bash
+pio run -e esp32-s3-devkitm-1 -t upload --upload-port /dev/ttyUSB0; tio /dev/ttyUSB0
+```
+
+*(Note: Windows users using VS Code can compile by hitting `Ctrl+Alt+B` and upload with `Ctrl+Alt+U`.)*
 
 ---
 
 ## 🔍 Verification & Diagnostics
 
-1. Press `Ctrl+Alt+M` to open your PlatformIO Serial Monitor window via the UART port. You will see the initialization banner sequence print.
+1. Launch your terminal log tracking stack. You will see the initialization banner sequence print.
 2. Plug a second USB data cable into the **Native USB** port of the DevKit and attach it to your target computer/phone interface.
 3. Check the status indicator LED on the Tab5 keyboard. It should instantly switch to a **solid Blue**, confirming that the bridge has established an active connection over the I2C bus.
 4. Open any text application and type. 
@@ -95,8 +109,3 @@ If you disconnect a data jumper wire (such as SCL or SDA) while the device is ru
 
 ## 📄 License
 This project is open-source and licensed under the MIT License.
-
-
-```
-pio run -e esp32-s3-devkitm-1 -t upload --upload-port /dev/ttyUSB0; tio /dev/ttyUSB0
-```
