@@ -4,7 +4,6 @@ An ultra-low latency, self-healing hardware bridge that transforms the **M5Stack
 
 <img width="3213" height="1832" alt="20260627_160042" src="https://github.com/user-attachments/assets/13cd1b84-2139-4877-8e5e-62c2dc9acf33" />
 
-
 | ESP32-S3 DevKit Pinout Reference | M5Stack Tab5 Mechanical Unit |
 | :---: | :---: |
 | [![ESP32-S3 DevKit Layout](https://github.com/user-attachments/assets/41c6e95d-75cd-426c-9e0f-f802caf7abae)](https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitm-1/user_guide.html#hardware-reference) | [![M5Stack Tab5 Layout](https://github.com/user-attachments/assets/afd5b47d-35e6-4fc1-bbc6-6e8a60b8b79c)](https://docs.m5stack.com/en/tab5/Tab5_Keyboard) |
@@ -41,13 +40,13 @@ Connect your **M5Stack Tab5 Keyboard** directly to the **ESP32-S3-DevKitM-1** vi
 ### 📐 2x5 Interface Pinout (P1 Connector)
 When breaking out connections without the Tab5 mainboard, you will be tapping directly into the dual-row **2x5 interface connector (P1)** located on the keyboard module alignment slot. To trace the trace lines or find specific pin arrays, verify with the official wiring diagrams available via the [M5Stack Tab5 Keyboard Schematic Sheet](https://docs.m5stack.com/en/tab5/Tab5_Keyboard).
 
-You are only connecting 3V3, GND, SCL, SDA and INT
+You are only connecting 3V3, GND, SCL, SDA and INT.
 
 <img width="565" height="367" alt="image" src="https://github.com/user-attachments/assets/11e6cd90-2d4c-434f-9c31-fe18a08fe2b3" />
 
 ---
 
-## 🔌 Understanding Your Board's Dual micro USB Ports
+## 🔌 Understanding Your Board's Dual USB-C Ports
 
 The ESP32-S3 DevKit houses two separate USB interfaces:
 1. **USB-to-UART Port**: Wired to an onboard CP210x chip. Connect this to your PC to upload your firmware binary and track live telemetry logs in the PlatformIO Serial Monitor.
