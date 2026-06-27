@@ -41,6 +41,14 @@ Connect your **M5Stack Tab5 Keyboard** directly to the **ESP32-S3-DevKitM-1** vi
 When breaking out connections without the Tab5 mainboard, you will be tapping directly into the dual-row **2x5 interface connector (P1)** located on the keyboard module alignment slot. To trace the trace lines or find specific pin arrays, verify with the official wiring diagrams available via the [M5Stack Tab5 Keyboard Schematic Sheet](https://docs.m5stack.com/en/tab5/Tab5_Keyboard).
 
 You are only connecting VCC_3V3, GND, SCL, SDA and INT.
+in my top picture i used
+3V3	Purple
+GND	White and Green
+
+SDA	Yellow
+SCL	Orange
+INT	Blue
+
 
 <img width="565" height="367" alt="image" src="https://github.com/user-attachments/assets/11e6cd90-2d4c-434f-9c31-fe18a08fe2b3" />
 
