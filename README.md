@@ -129,3 +129,11 @@ If you disconnect a data jumper wire (such as SCL or SDA) while the device is ru
 
 ## 📄 License
 This project is open-source and licensed under the MIT License.
+
+## ⚠️ Disclaimer
+> **Warning:** Use of this project is entirely at your own risk. The project developer accept no liability for hardware damage, malfunctions, or safety hazards resulting from replication.
+
+## ☕ Support My Work
+If this open hardware project brings utility to you, consider supporting my design pipeline!
+
+[![Buy Me A Coffee](https://img.shields.io/badge/buy_me_a_coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/mark.birss)
