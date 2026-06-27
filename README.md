@@ -95,3 +95,8 @@ If you disconnect a data jumper wire (such as SCL or SDA) while the device is ru
 
 ## 📄 License
 This project is open-source and licensed under the MIT License.
+
+
+```
+pio run -e esp32-s3-devkitm-1 -t upload --upload-port /dev/ttyUSB0; tio /dev/ttyUSB0
+```
