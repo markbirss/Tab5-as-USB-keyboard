@@ -36,7 +36,7 @@ Connect your **M5Stack Tab5 Keyboard** directly to the **ESP32-S3-DevKitM-1** vi
 | **SCL** | **GPIO 9** | Clock Line | Default core S3 I2C Clock Pin |
 | **INT** | **GPIO 10** | Interrupt Pin | Safely tracks low-signal hardware alerts |
 
-> 💡 **Signal Integrity Note:** If you are running long wire extensions or custom cables and experience character skipping, place two external **4.7kΩ Pull-Up Resistors** (SDA to 5V and SCL to 5V) to stabilize bus voltage.
+> 💡 **Signal Integrity Note:** If you are running long wire extensions or custom cables and experience character skipping, place two external **4.7kΩ Pull-Up Resistors** (SDA to 3V3 and SCL to 3V3) to stabilize bus voltage.
 
 ---
 
