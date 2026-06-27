@@ -48,13 +48,16 @@ You are only connecting 3V3, GND, SCL, SDA and INT
 ### 🎨 Reference Photo Wire Colors
 Use this guide to match the custom wiring harness layout shown in the reference image above:
 
-| Signal | Custom Wire Color |
-| :--- | :--- |
-| **3V3** | 🟣 Purple |
-| **GND** | ⚪🟢 White & Green |
-| **SDA** | 🟡 Yellow |
-| **SCL** | 🟠 Orange |
-| **INT** | 🔵 Blue |
+### 🎨 Reference Photo Wire Colors
+Use this guide to match the custom wiring harness layout shown in the reference image above:
+
+| Signal | Custom Wire Color | Pin |
+| :--- | :--- | :--- |
+| **3V3** | 🟣 Purple |  5 |
+| **GND** | ⚪🟢 White & Green | 4 and 3 |
+| **SDA** | 🟡 Yellow | 8 |
+| **SCL** | 🟠 Orange | 7 |
+| **INT** | 🔵 Blue | 9 |
 ---
 
 ## 🔌 Understanding Your Board's Dual micro USB Ports
