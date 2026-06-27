@@ -30,7 +30,7 @@ Connect your **M5Stack Tab5 Keyboard** directly to the **ESP32-S3-DevKitM-1** vi
 
 | Tab5 Keyboard Pin | ESP32-S3 Pin | Description | Wire Notes |
 | :--- | :--- | :--- | :--- |
-| **3V3** | **3V3** | System Power Rail | Main power delivery from USB |
+| **3V3** | **3V3** | Power Rail | Tab5 power |
 | **GND** | **G** | Ground Reference | Common ground plane connection |
 | **SDA** | **GPIO 8** | Data Line | Default core S3 I2C Data Pin |
 | **SCL** | **GPIO 9** | Clock Line | Default core S3 I2C Clock Pin |
